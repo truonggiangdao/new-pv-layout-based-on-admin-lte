@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PV - Login</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <link rel="stylesheet" href="css/skins/skin-black.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="favicon.ico">
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-black">
+<div class="wrapper login-page">
+    <!-- Main content -->
+    <section class="login-form">
+      <div>
+        <!-- Form title -->
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="login-title text-center">Log In</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- User Name -->
+            <div class="form-group has-feedback">
+              <input name="userName" id="userName" type="text" class="form-control" placeholder="User Name" enter="login()">
+              <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <p class="text-error">User Name is required</p>
+
+            <!-- Password -->
+            <div class="form-group spaced-top has-feedback">
+              <input name="password" id="password" type="password" class="form-control" placeholder="Password" enter="login()">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <p class="text-error">Password is required</p>
+
+            <div class="form-group spaced-top spaced-bottom">
+              <label id="lblStatus" class="text-error">Wrong username or password or user is inactive. Please try again.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <a class="text-maroon" href="login.html">I forgot my password</a> 
+          </div>
+          <div class="col-xs-12">
+            <button class="btn bg-maroon btn-block">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
